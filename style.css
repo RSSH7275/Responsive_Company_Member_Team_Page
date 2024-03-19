@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+}
+
+.contain {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+.containA {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  column-gap: 38%;
+}
+
+.containB {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  column-gap: 34%;
+}
+
+.pointer {
+  width: 110px;
+  /* left: 10%; */
+  height: 60px;
+  position: relative;
+  background: rgb(176, 102, 216);
+}
+.pointer::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 30px solid transparent; /* Increase the height here */
+  border-bottom: 32px solid transparent; /* Increase the height here */
+}
+
+.pointerA {
+  width: 110px;
+  height: 60px;
+  position: relative;
+  background: rgb(176, 102, 216);
+}
+.pointerA::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-right: 20px solid white;
+  border-top: 30px solid transparent;
+  border-bottom: 32px solid transparent;
+}
+
+.CompanySectn {
+  /* display: flex; */
+  padding-top: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.companyHrTag {
+  text-align: center;
+  width: auto;
+  padding: 1rem;
+  background-color: rgb(176, 102, 216);
+  color: #ffffff;
+  font-size: large;
+  border-radius: 1rem;
+}
+
+.teamMeetSectn {
+  padding: 2.5rem;
+}
+
+.userCard {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+}
+
+.cardContainerA {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  column-gap: 15rem;
+}
+
+.cardContainerB {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+svg {
+  width: 80px;
+  height: 80px;
+}
+
+.itemA p,
+.itemB p,
+.itemC p,
+.itemD p,
+.itemE p,
+.devA p,
+.devB p,
+.devC p,
+.devD p,
+.devE p,
+.devAA p,
+.devAB p,
+.devAC p,
+.smA p,
+.smB p,
+.smC p,
+.smD p,
+.smE p,
+.smAA p,
+.smAB p,
+.smAC p {
+  /* text-align: center; */
+  font-style: italic;
+}
+
+.developmentSection {
+  padding: 8rem;
+}
+
+.salesMarketSection {
+  padding: 8rem;
+}
+
+.developmentA {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.salesA {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.developmentB {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.salesB {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+
+@media only screen and (max-width: 1450px) {
+  .containA{
+    column-gap:36%;
+  }
+
+}
+@media only screen and (max-width: 1310px) {
+  .containA{
+    column-gap:34%;
+  }
+
+  .containB {
+    column-gap: 30%;
+  }
+
+}
+
+@media only screen and (max-width: 1125px) {
+  .containA{
+    column-gap:31%;
+  }
+
+  .containB {
+    column-gap: 25%;
+  }
+
+}
+
+
+@media only screen and (max-width: 955px) {
+  .containA{
+    column-gap:28%;
+  }
+
+  .containB {
+    column-gap: 22%;
+  }
+
+}
+
+@media only screen and (max-width: 845px) {
+  .containA{
+    column-gap:24%;
+  }
+
+  .containB {
+    column-gap: 20%;
+  }
+
+}
+@media only screen and (max-width: 740px) {
+  .containA{
+    column-gap:21%;
+  }
+
+  .containB {
+    column-gap: 16%;
+  }
+
+}
+
+@media only screen and (max-width: 740px) {
+  .developmentSection {
+    padding: 2rem;
+  }
+  
+  .salesMarketSection {
+    padding: 2rem;
+  }
+  
+
+}
+@media only screen and (max-width: 575px) {
+  .containA{
+    column-gap:17%;
+  }
+
+  .containB {
+    column-gap: 12%;
+  }
+
+}
+@media only screen and (max-width: 489px) {
+  .containA{
+    column-gap:12%;
+  }
+
+}
+
+@media only screen and (max-width: 465px) {
+  .containA{
+    column-gap:12%;
+  }
+
+  .cardContainerA{
+    column-gap: 6rem;
+  }
+  .containB {
+    column-gap: 5%;
+  }
+
+  /* .CompanySectn{
+     max-width: ;
+  }
+
+  .teamMeetSectn{
+
+  }
+
+  .developmentSection{
+
+  }
+
+  .salesMarketSection{
+
+  } */
+
+  body{
+    min-width: 345px;
+  }
+
+}
+
+
